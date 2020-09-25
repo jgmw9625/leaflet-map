@@ -9,7 +9,13 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
-    "vue": "^2.6.11"
+    "element-ui": "2.12.0",
+    "leaflet": "^1.7.1",
+    "pug": "^3.0.0",
+    "pug-plain-loader": "^1.0.0",
+    "sass-loader": "^10.0.2",
+    "vue": "^2.6.11",
+    "vue-axios": "^2.1.5"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.5.0",
@@ -18,6 +24,7 @@
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
+    "node-sass": "^4.14.1",
     "vue-template-compiler": "^2.6.11"
   },
   "eslintConfig": {
@@ -32,7 +39,64 @@
     "parserOptions": {
       "parser": "babel-eslint"
     },
-    "rules": {}
+    "rules": {
+      "generator-star-spacing": "off",
+      "vue/order-in-components": [
+        "error",
+        {
+          "order": [
+            "el",
+            "name",
+            "parent",
+            "functional",
+            [
+              "delimiters",
+              "comments"
+            ],
+            [
+              "components",
+              "directives",
+              "filters"
+            ],
+            "extends",
+            "mixins",
+            "inheritAttrs",
+            "model",
+            [
+              "props",
+              "propsData"
+            ],
+            "data",
+            "computed",
+            "watch",
+            "LIFECYCLE_HOOKS",
+            "methods",
+            [
+              "template",
+              "render"
+            ],
+            "renderError"
+          ]
+        }
+      ],
+      "comma-dangle": [
+        "error",
+        "always-multiline"
+      ],
+      "radix": "error",
+      "no-unused-vars": "warn",
+      "no-extend-native": "off",
+      "prefer-promise-reject-errors": "off",
+      "standard/no-callback-literal": "off",
+      "handle-callback-err": "off",
+      "line-comment-position": [
+        "error",
+        {
+          "position": "above"
+        }
+      ],
+      "comma-spacing": "error"
+    }
   },
   "browserslist": [
     "> 1%",
