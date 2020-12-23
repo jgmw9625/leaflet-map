@@ -9,6 +9,10 @@ div(id="app")
 
 export default {
   name: 'App',
+
+  created () {
+    if (this.$route.path === '/') this.$router.push('/home')
+  },
 }
 
 </script>
