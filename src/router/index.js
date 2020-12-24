@@ -5,7 +5,7 @@ import Foo from '@/components/HelloWorld'
 Vue.use(VueRouter)
 
 const routes = [
-  { path: '/home', component: Foo },
+  { path: '*', component: Foo },
 ]
 
 const router = new VueRouter({

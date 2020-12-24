@@ -58,8 +58,6 @@ export default {
   },
 
   mounted() {
-    console.log(this.$route)
-    if (this.$route.path === '/') this.$router.push('/home')
     // == 初始化 ==
     openStreetMap = L.map('map').setView([24.164145, 120.636210], 14)
 
