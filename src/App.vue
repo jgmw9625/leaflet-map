@@ -7,7 +7,7 @@ div(id="app")
 
 <script>
 
-export default {
+export default { 
   name: 'App',
 
   created () {
